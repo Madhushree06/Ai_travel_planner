@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Trip Planner", page_icon="✈️", layout="wid
 st.session_state.setdefault("trip_plan", None)
 
 def create_agents(api_key: str):
-    llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
+        llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
 
     city_expert = Agent(
         role="City Information Expert",
